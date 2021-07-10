@@ -1,4 +1,4 @@
-let role = "admin";
+let role = "accessControl";
 let accessAbility;
 
 switch (role) {
