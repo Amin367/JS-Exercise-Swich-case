@@ -1,22 +1,20 @@
-let role = "accessControl";
-let accessAbility;
+let userAccess = "accessControl";
 
-switch (role) {
+switch (userAccess) {
+  
   case "admin":
-    accessAbility = "fullAccess";
+    console.log("FullAccess");
     break;
 
   case "teacher":
-      accessAbility = "hisCourses/herCourses";
+    console.log("hisCourses/herCourses");
     break;
 
   case "student":
-    accessAbility = "readOnly";
+    console.log("readOnly");
     break;
 
     case "other":
-      accessAbility = "noAccess";
+      console.log("noAccess");
       break;
 }
-
-console.log(accessAbility);
